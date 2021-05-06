@@ -1,5 +1,5 @@
 # Ars-Paradoxica-Codebreaking
-A program written to break Ars Paradoxica codes (blue for now, red and green coming up). 
+A program written in r made solely for the purpose for breaking Ars Paradoxica codes. As of right now, only blue codes are available through the program. I will be adding red and green codes shortly. You will need RStudio to open the codebreaking file. Once I've coded the red and green codes for the r version, I might also go back for python, but we'll see.
 
 To get started, simply replace the word thunderstorms with the weather key given in the show in both places. Make sure that you keep it between the quotation marks, otherwise the program WILL NOT WORK. For example, write "windy" not windy.
 
