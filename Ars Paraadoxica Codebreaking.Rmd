@@ -28,7 +28,6 @@ abc<- function(weather){
 
 decrypt<- function(plaintext, key) {
   plaintext<- as.integer(plaintext)
-  print(plaintext)
   key<- rep(abc(key), len=length(plaintext))
   for (a in 1:length(plaintext)) {
     if ((plaintext[a]-key[a])>0) {
@@ -38,7 +37,6 @@ decrypt<- function(plaintext, key) {
       ciphertxt<- c(ciphertxt,((plaintext[a]-key[a])+27))
                     }
   }
-  print(ciphertxt)
   for (b in 1:length(ciphertxt)){
     ciphertext<- c(ciphertext, LETTERS[ciphertxt[b]])
   }
@@ -52,7 +50,6 @@ decrypt<- function(plaintext, key) {
 
 #Once you've added your information, run the current chunk. Ignore the numbers its spits out: the last line will have your text.
 
-abc("thunderstorms")
 decrypt(c(21, 22, 12, 01, 17, 13, 05, 23, 13, 19, 22, 26, 06, 02, 21, 25, 07, 02, 08, 26, 23, 23, 02, 26, 26, 23, 13, 12, 25, 01, 09, 19, 09, 12, 18, 20, 26, 08, 23), "thunderstorms")
 
 ```
